@@ -1,0 +1,12 @@
+#bt-inic {
+	border-radius: 30px;
+}
+
+.acesso{
+	color: white;
+	text-decoration: none;
+}
+
+.acesso:hover{
+	color: #DAA520;
+}
