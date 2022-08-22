@@ -6,6 +6,14 @@
 	padding-top: 40px;
 }
 
+#acesso{
+	padding-right: 200px; 
+	padding-left: 200px; 
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: blue;
+}
+
 .acesso{
 	color: white;
 	text-decoration: none;
@@ -14,5 +22,10 @@
 
 .acesso:hover{
 	color: #DAA520;
+}
+
+.noticia{
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
