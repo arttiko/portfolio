@@ -6,12 +6,20 @@
 	padding-top: 40px;
 }
 
-#acesso{
+#caixa-acesso{
 	padding-right: 200px; 
 	padding-left: 200px; 
 	padding-top: 50px;
 	padding-bottom: 50px;
-	background: blue;
+	background: #223D80;
+}
+
+#slide{
+	background: #223D80; 
+	padding-top: 30px; 
+	padding-bottom: 30px; 
+	padding-left: 80px; 
+	padding-right: 80px; 
 }
 
 .acesso{
