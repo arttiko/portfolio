@@ -2,11 +2,17 @@
 	border-radius: 30px;
 }
 
+#carta{
+	padding-top: 40px;
+}
+
 .acesso{
 	color: white;
 	text-decoration: none;
+	margin-bottom: 10px;
 }
 
 .acesso:hover{
 	color: #DAA520;
 }
+
