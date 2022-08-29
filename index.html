@@ -212,9 +212,9 @@
 	<section>
 		<div id="slide" class="swiper mySwiper">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide" ><img style="height: auto; max-width: 100%;" src="assets/pic/car1.jpg" class="d-block w-100" alt="..."></div>
-				<div class="swiper-slide" ><img style="height: auto; max-width: 100%;" src="assets/pic/car1.jpg" class="d-block w-100" alt="..."></div>
-				<div class="swiper-slide" ><img style="height: auto; max-width: 100%;" src="assets/pic/car1.jpg" class="d-block w-100" alt="..."></div>
+				<div class="swiper-slide" ><img id="img-slide" style="height: auto; max-width: 100%;" src="assets/pic/car1.jpg" class="d-block w-100" alt="..."></div>
+				<div class="swiper-slide" ><img id="img-slide" style="height: auto; max-width: 100%;" src="assets/pic/car1.jpg" class="d-block w-100" alt="..."></div>
+				<div class="swiper-slide" ><img id="img-slide" style="height: auto; max-width: 100%;" src="assets/pic/car1.jpg" class="d-block w-100" alt="..."></div>
 			</div>
 			<div class="swiper-button-next"></div>
 			<div class="swiper-button-prev"></div>
@@ -226,7 +226,8 @@
 		<!-- Initialize Swiper -->
 		<script>
 			var swiper = new Swiper(".mySwiper", {
-				spaceBetween: 30,
+				loop: true,
+				spaceBetween: 1200,
 				centeredSlides: true,
 				autoplay: {
 					delay: 2500,
