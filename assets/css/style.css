@@ -9,11 +9,11 @@
 #caixa-acesso{
 	padding-top: 50px;
 	padding-bottom: 50px;
-	background: #223D80;
+	background: #223d80;
 }
 
 #slide{
-	background: #223D80;
+	background: #223d80;
 	padding-top: 5%; 
 	padding-bottom: 5%; 
 	padding-left: 15%; 
@@ -23,12 +23,12 @@
 .acesso{
 	color: white;
 	margin-bottom: 10px;
-	background: #223D80;
+	background: #223d80;
 	border: 0;
 }
 
 .acesso:hover{
-	color: #DAA520;
+	color: #daa520;
 }
 
 .noticia{
@@ -49,5 +49,4 @@
 .texto-link{
 	text-decoration: none;
 }
-
 
