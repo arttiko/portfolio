@@ -19,14 +19,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 	<!-- Jquerry -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-	<script>
-		$(document).ready(function () {
-			$("#login").click(function () {
-				alert("Logando!!!")
-			})
-		})
-	</script>    
+   
 </head>
 <body>
 	<!-- Barra de navegação -->
@@ -115,12 +108,18 @@
 									</form>
 								</div>
 								<hr>
-								<div class=" container d-grid gap-2" style="margin-bottom: 5%;">
+								<div id="load" style="display: none;">
+									<img src="assets/icon/load.svg" style="width: 30px; height: 30px;" >
+								</div>
+								<div id="btn-acesso">
+								<div  class="container d-grid gap-2" style="margin-bottom: 5%;">
+									
 									<button id="login" type="submit" class="btn btn-primary btn-block">Acessar</button>
 									<button id="recuperar" class="btn btn-outline-secondary btn-block" data-bs-target="#modalRecuperar" data-bs-toggle="modal" data-bs-dismiss="modal">Recuperar Senha</button>
 									<button id="primeiro" class="btn btn-outline-secondary btn-block" data-bs-target="#modalPrimeiroAcesso" data-bs-toggle="modal" data-bs-dismiss="modal">Primeiro Acesso</button>
+									
 								</div>
-								
+								</div>
 							</div>
 						</div>
 					</div>
@@ -422,49 +421,76 @@
 				</div>	
 			</div>
 			<hr>
-			<div>
+			<div id="lista-site">
 			<div class="row">
-				<div class="col-2">
+				<div class="col-md-2 col-sm-4">
+					<label>Mídia</label>
 					<ul>
-						<label>Mídia</label>
 						<li><a href="">Noticias</a></li>
 					</ul>
 				</div>
-				<div class="col-2">
-					<ul>
-						<label>CDL</label>
+				<div class="col-md-2 col-sm-4">
+					<label>CDL</label>
+					<ul>						
 						<li><a href="">Planos</a></li>
 						<li><a href="">Produtos e Serviços</a></li>
 						<li><a href="">Associados</a></li>
 					</ul>
 				</div>
-				<div class="col-2">
-					<ul>
-						<label>Mídia</label>
-						<li><a href="">Noticias</a></li>
+				<div class="col-md-2 col-sm-4">
+					<label>Institucional</label>
+					<ul>						
+						<li><a href="">Eventos anuais</a></li>
+						<li><a href="">Hitória CDL Natal</a></li>
+						<li><a href="">Hitória CDL Jovem</a></li>
+						<li><a href="">Diretoria CDL Natal</a></li>
+						<li><a href="">Diretoria CDL Jovem</a></li>
+						<li><a href="">Imprensa</a></li>
+						<li><a href="">Revistas</a></li>
 					</ul>
 				</div>
-				<div class="col-2">
+				<div class="col-md-2 col-sm-4">
+					<label>Eventos</label>
 					<ul>
-						<label>Mídia</label>
-						<li><a href="">Noticias</a></li>
+						<li><a href="">Inscrições</a></li>
+						<li><a href="">Galeria de fotos</a></li>
 					</ul>
 				</div>
-				<div class="col-2">
+				<div class="col-md-2 col-sm-4">
+					<label>Redes sociais</label>
 					<ul>
-						<label>Mídia</label>
-						<li><a href="">Noticias</a></li>
+						<li>CDL Natal</li>
+						<li><a href=""><i class="fa-brands fa-square-facebook"></i>/cdlnatal</a></li>
+						<li><a href=""><i class="fa-brands fa-instagram"></i>/cdlnatal</a></li>
+					</ul>
+					<ul>
+						<li>CDL Jovem</li>
+						<li><a href=""><i class="fa-brands fa-square-facebook"></i>/cdljovemnatal</a></li>
+						<li><a href=""><i class="fa-brands fa-instagram"></i> col-sm-4/cdljovemnatal.nat</a></li>
 					</ul>
 				</div>
-				<div class="col-2">
+				<div class="col-md-2 col-sm-4">
+					<label>Atendimento</label>
 					<ul>
-						<label>Mídia</label>
-						<li><a href="">Noticias</a></li>
+						<li><a href="">Fale Conosco</a></li>
+						<li><a href="">Ouvidoria</a></li>
+						<li><a href="">Seja nosso parceiro</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
+		<hr>
+		<div class="rodape">
+			<div class="row justify-content-between">			
+				<div class="col-4">
+					<p>Rua Ceará Mirim, 322, Tirol, 59020-240, Natal-RN</p>
+				</div>
+				<div class="col-2">
+					<a class="jvm-logo" href="#">JVM Comunicação</a>
+				</div>
+			</div>
 		</div>
+	</div>
 
 	</section>
 
@@ -476,7 +502,7 @@
 
 
 
-<!-- codigos Java -->
+<!-- codigos Javascript -->
 		<!-- Swiper JS -->
 		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
@@ -518,6 +544,15 @@
 				},
 			});
 		</script>
-
+		<!-- Java de logando -->
+		<script>
+			$(document).ready(function () {
+				$("#login").click(function () {
+					$("#load").show();
+					$("#btn-acesso").hide();					
+				})
+			})
+		</script>
+<!-- Fim dos codigos Javascript -->
 </body>
 </html>

@@ -72,3 +72,25 @@
 .f-roboto{
 	font-family: 'Roboto', sans-serif;
 }
+
+li > a{
+	text-decoration: none;
+}
+
+div#lista-site li{
+	list-style: none;
+}
+
+div#lista-site ul{
+	padding-left: 0;
+}
+
+li > a:hover{
+	text-decoration: underline;
+}
+
+.jvm-logo{
+	text-decoration: none;
+	color: grey;
+}
+
