@@ -75,10 +75,12 @@
 
 li > a{
 	text-decoration: none;
+	color: #397CBE; /*<----- cor dos links*/
 }
 
 div#lista-site li{
 	list-style: none;
+
 }
 
 div#lista-site ul{
