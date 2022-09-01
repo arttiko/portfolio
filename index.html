@@ -16,16 +16,17 @@
 	<!-- Animações -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+	<!-- Jquerry -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <script>
-    	$(document).ready(function () {
-    		$("#login").click(function () {
-    			alert("Logando!!!")
-    		})
-    	})
-    </script>    
+	<script>
+		$(document).ready(function () {
+			$("#login").click(function () {
+				alert("Logando!!!")
+			})
+		})
+	</script>    
 </head>
 <body>
 	<!-- Barra de navegação -->
@@ -220,29 +221,6 @@
 			<div class="swiper-button-prev"></div>
 		</div>
 
-		<!-- Swiper JS -->
-		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-		<!-- Initialize Swiper -->
-		<script>
-			var swiper = new Swiper(".mySwiper", {
-				loop: true,
-				spaceBetween: 1200,
-				centeredSlides: true,
-				autoplay: {
-					delay: 2500,
-					disableOnInteraction: false,
-				},
-				pagination: {
-					el: ".swiper-pagination",
-					clickable: true,
-				},
-				navigation: {
-					nextEl: ".swiper-button-next",
-					prevEl: ".swiper-button-prev",
-				},
-			});
-		</script>
 	</section>
 
 	<!-- Acesso -->
@@ -359,23 +337,23 @@
 	<br>
 
 	<!-- Mapa do Site -->
-	<section style="background-image: url(assets/pic/ponte.jpg);">
+	<section id="titulo-mapa" style="background-image: url(assets/pic/ponte.jpg);">
 		<div class="container">
 			<div class="row">
 					<div class="col-6">
 						<h2>Benefícios de ser associado CDL Natal</h2>
-						<ul >
-							<li >Eventos presenciais e online com temas atuais</li>
-							<li >Muito networking entre os associados locais e do país</li>
-							<li >Visitas técnicas a empresas que são Cases de Sucesso pelo país</li>
+						<ul>
+							<li>Eventos presenciais e online com temas atuais</li>
+							<li>Muito networking entre os associados locais e do país</li>
+							<li>Visitas técnicas a empresas que são Cases de Sucesso pelo país</li>
 							<li>Acesso a descontos em eventos de parceiros</li>
 							<li>Desconto na emissão de Certificados Digitais</li>
 							<li>Desconto na locação de salas e auditório</li>
 							<li>E muito mais!</li>
 						</ul>	
 						<div class="row">
-							<div class="col-6"><button class="btn btn-outline-light btn-block" style="margin-left:auto; margin-right: auto; width: 100%; height: 100%;">Quero me associar</button></div>
-							<div class="col-6"><a href="#" class="btn btn-outline-light btn-block" style="margin-left:auto; margin-right: auto; width: 100%; height: 100%;">Conhecer associados</a></div>
+							<div class="col-6"><a href="#" class="btn btn-outline-light btn-block btn-lg" style="width: 100%; height: 100%; --bs-btn-font-size: 1.5rem; border-width: 2px; border-radius: 15px; font-weight: 500;">Quero me associar</a></div>
+							<div class="col-6"><a href="#" class="btn btn-outline-light btn-block btn-lg" style="width: 100%; height: 100%; --bs-btn-font-size: 1.5rem; border-width: 2px; border-radius: 15px; font-weight: 500;">Conhecer associados</a></div>
 						</div>	
 					</div>
 					<div class="col-6">
@@ -383,22 +361,163 @@
 					</div>
 			</div>
 			<div class="row">
-				<div class="col-4"><img src="assets/pic/noticia.png" alt=""></div>
-				<div class="col-4"><img src="assets/pic/noticia.png" alt=""></div>
-				<div class="col-4"><img src="assets/pic/noticia.png" alt=""></div>
+				<div class="col-4" style="margin-top: 5%;"><img src="assets/pic/noticia.png" alt=""></div>
+				<div class="col-4" style="margin-top: 5%;"><img src="assets/pic/noticia.png" alt=""></div>
+				<div class="col-4" style="margin-top: 5%;"><img src="assets/pic/noticia.png" alt=""></div>
 			</div>
+			<br>
+			<br>
 		</div>
 	</section>
-	
+	<!-- area assinar noticias -->
+	<div class="container-fluid py-3" style="background: #FFB00E;">
+		<div class="container">
+			<div class="row">
+				<div class="col-4 offset-md-1">
+					<h3>Receba por email nossas novidades e fique por dentro</h3>
+				</div>
+				<div class="col-5" style="display: flex; justify-items: center; align-items: center;">
+					<div class="input-group">
+						<input type="email" class="form-control" placeholder="Digite o seu endereço de email..." aria-label="Recipient's username" aria-describedby="button-addon2">
+						<button class="btn btn-primary" type="button" id="button-addon2">Assinar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- parceiros -->
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-5">
+					<h2>4009-0000</h2>
+					<p><small>Telefone</small></p>
+				</div>
+				<div class="col-7" style="display: flex; justify-items: center; align-items: center;">
+					<div class="row">
+					<div class="col"><img src="assets/pic/cndl.jpg" alt=""></div>
+					<div class="col"><img src="assets/pic/cndl.jpg" alt=""></div>
+					<div class="col"><img src="assets/pic/cndl.jpg" alt=""></div>
+					<div class="col"><img src="assets/pic/cndl.jpg" alt=""></div>
+					<div class="col"><img src="assets/pic/cndl.jpg" alt=""></div>
+					</div>
+				</div> 
+			</div>
+			<hr>
+
+			<div>
+				<!-- Swiper -->
+				<div class="swiper slide-parceiro">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="assets/pic/rn.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="assets/pic/rn.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="assets/pic/rn.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="assets/pic/rn.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="assets/pic/rn.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="assets/pic/rn.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="assets/pic/rn.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="assets/pic/rn.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="assets/pic/rn.jpg" alt=""></div>
+					</div>
+				</div>	
+			</div>
+			<hr>
+			<div>
+			<div class="row">
+				<div class="col-2">
+					<ul>
+						<label>Mídia</label>
+						<li><a href="">Noticias</a></li>
+					</ul>
+				</div>
+				<div class="col-2">
+					<ul>
+						<label>CDL</label>
+						<li><a href="">Planos</a></li>
+						<li><a href="">Produtos e Serviços</a></li>
+						<li><a href="">Associados</a></li>
+					</ul>
+				</div>
+				<div class="col-2">
+					<ul>
+						<label>Mídia</label>
+						<li><a href="">Noticias</a></li>
+					</ul>
+				</div>
+				<div class="col-2">
+					<ul>
+						<label>Mídia</label>
+						<li><a href="">Noticias</a></li>
+					</ul>
+				</div>
+				<div class="col-2">
+					<ul>
+						<label>Mídia</label>
+						<li><a href="">Noticias</a></li>
+					</ul>
+				</div>
+				<div class="col-2">
+					<ul>
+						<label>Mídia</label>
+						<li><a href="">Noticias</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		</div>
+
+	</section>
 
 
 
 
 
-	<div><h1>TESTE</h1></div>
 
 
 
+
+<!-- codigos Java -->
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+		<!-- Initialize Swiper inicio -->
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				loop: true,
+				spaceBetween: 1200,
+				centeredSlides: true,
+				autoplay: {
+					delay: 2500,
+					disableOnInteraction: false,
+				},
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
+		</script>
+
+		<!-- Initialize Swiper Parceiros-->
+		<script>
+			var swiper = new Swiper(".slide-parceiro", {
+				loop: true,
+				slidesPerView: 3,
+				spaceBetween: 30,
+				freeMode: true,
+				autoplay: {
+					delay: 2500,
+					disableOnInteraction: false,
+				},
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+			});
+		</script>
 
 </body>
 </html>

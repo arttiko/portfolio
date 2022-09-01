@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap');
+
+/*Id's*/
 #bt-inic {
 	border-radius: 30px;
 }
@@ -20,6 +23,22 @@
 	padding-right: 15%; 
 }
 
+#titulo-mapa h2{
+	color: #FFFFFF;
+	font-size: 2.8em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	margin-bottom: 10%;
+	margin-top: 5%;
+}
+
+#titulo-mapa li{
+	font-size: 1.2em;
+	color: #fff;
+	line-height: 2
+}
+
+/*classes*/
 .acesso{
 	color: white;
 	margin-bottom: 10px;
@@ -50,3 +69,6 @@
 	text-decoration: none;
 }
 
+.f-roboto{
+	font-family: 'Roboto', sans-serif;
+}
