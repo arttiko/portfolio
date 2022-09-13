@@ -93,12 +93,25 @@ li > a:hover, .manchete:hover{
 	color: grey;
 }
 
-@media screen and (min-width: 0px) and (max-width: 992px){
+.manchete{
+	color: #397CBE;
+}
+
+
+/*medias query*/
+
+@media screen and (min-width: 0px) and (max-width: 990px){
 	#img-brasil{
+		display: none;
+	}
+
+	.img-slide-g{
 		display: none;
 	}
 }
 
-.manchete{
-	color: #397CBE;
+@media screen and (min-width: 991px){
+	.img-slide-m{
+		display: none;
+	}
 }

@@ -26,8 +26,9 @@ $(document).ready(function () {
 	// slide parceiro
 	var swiper = new Swiper(".mySwiper", {
 		loop: true,
-		spaceBetween: 1200,
-		centeredSlides: true,
+		spaceBetween: 0,
+		centeredSlides: false,
+		freeMode: true,
 		autoplay: {
 			delay: 2500,
 			disableOnInteraction: false,
@@ -36,10 +37,7 @@ $(document).ready(function () {
 			el: ".swiper-pagination",
 			clickable: true,
 		},
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		},
+		
 	});
 })
 
